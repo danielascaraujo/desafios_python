@@ -130,4 +130,3 @@ def main():
             print("Operação inválida! Por favor, selecione corretamente a opção desejada.")
 
 main()
-
