@@ -7,7 +7,7 @@ def menu():
     [3] Extrato
     [4] Novo usuário
     [5] Nova Conta
-    [6] Sair
+    [0] Sair
 
     => """
     return input((menu))
@@ -29,7 +29,7 @@ def sacar(*, saldo, valor, extrato, limite, numero_saques, limite_saques):
     excedeu_numero_saques = numero_saques >= limite_saques
 
     if excedeu_saldo:
-        print("\nNão foi possível efetuar o saque! O valor solicitado excedeu o saldo disponível.")
+        print("\nNão foi possível efetuar o saque! Saldo insuficiente")
             
     elif excedeu_limite:
         print("\nNão foi possível efetuar o saque! O valor solicitado excedeu o limite disponível.")
@@ -123,7 +123,7 @@ def main():
             if conta:
                 contas.append(conta)
 
-        elif opcao == "6":
+        elif opcao == "0":
             break
 
         else:
